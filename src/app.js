@@ -20,6 +20,4 @@ app.get("/api/get/:size/:page", getSizeAndPage);
 
 app.post("/api/postJobs", postAll);
 
-app.listen(3000, () => {
-  console.log("server running");
-});
+app.listen(process.env.PORT || 3000);
